@@ -1,6 +1,4 @@
-﻿// Learn more about F# at http://fsharp.org
-// See the 'F# Tutorial' project for more help.
-open MoreLinq
+﻿open MoreLinq
 open System.Linq
 open MathNet.Symbolics
 open Newtonsoft.Json.Linq
@@ -15,4 +13,4 @@ let main argv =
     let x = symbol "x"
     x*x |> Infix.format |> printfn "%s" 
 
-    0 // return an integer exit code
+    0
