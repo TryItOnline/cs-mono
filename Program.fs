@@ -11,6 +11,6 @@ let main argv =
     @"{""foo"":42}" |> JObject.Parse |> printfn "%O"
 
     let x = symbol "x"
-    x*x |> Infix.format |> printfn "%s" 
+    x+x |> Infix.format |> printfn "%s" 
 
     0
