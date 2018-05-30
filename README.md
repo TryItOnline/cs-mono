@@ -16,3 +16,4 @@ The following libraries are available to all 3 languages:
  - FSharp.Core
  - FParsec
  - FParsecCS
+ - System.Runtime.CompilerServices.Unsafe
