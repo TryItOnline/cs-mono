@@ -40,7 +40,7 @@
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Xml" />
     <Reference Include="Superpower">
-      <HintPath>packages\Superpower.1.1.0\lib\net45\Superpower.dll</HintPath>
+      <HintPath>packages\Superpower.2.0.0\lib\net45\Superpower.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
