@@ -7,14 +7,14 @@ Imports NDesk.Options
 
 Public Class Application
 	Public Shared Sub Main()
-        'MoreLinq
+		'MoreLinq
 		Console.WriteLine(Enumerable.First(MoreEnumerable.Random()))
-        'Newtonsoft
+		'Newtonsoft
 		Console.WriteLine(JObject.Parse("{""foo"":42}"))
-        'MathNet
+		'MathNet
 		Dim x As Expr = Expr.Symbol("x")
 		Console.WriteLine(Infix.Format(x+x))
-        'DynamicExpresso
-        Console.WriteLine(New Interpreter().Eval("2+2"))
+		'DynamicExpresso
+		Console.WriteLine(New Interpreter().Eval("2+2"))
 	End Sub
 End Class
