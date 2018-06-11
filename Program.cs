@@ -5,6 +5,7 @@ using Newtonsoft.Json.Linq;
 using MathNet.Symbolics;
 using Expr = MathNet.Symbolics.Expression;
 using DynamicExpresso;
+using NDesk.Options;
 
 namespace TIO
 {
@@ -21,6 +22,10 @@ namespace TIO
 			Console.WriteLine(Infix.Format(x+x));
 			//DynamicExpresso
 			Console.WriteLine(new Interpreter().Eval("2+2"));
+			//NDesk.Options
+			Console.WriteLine(new OptionSet{
+				{"v", v=>{}}
+			}.Parse(new[] {"-v", "foo"})[0]);
 		}
 	}
 }

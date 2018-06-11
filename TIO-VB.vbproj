@@ -79,6 +79,9 @@
     <Reference Include="DynamicExpresso.Core">
       <HintPath>packages\DynamicExpresso.Core.2.0.2\lib\net461\DynamicExpresso.Core.dll</HintPath>
     </Reference>
+    <Reference Include="NDesk.Options">
+      <HintPath>packages\NDesk.Options.0.2.1\lib\NDesk.Options.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Application.vb" />

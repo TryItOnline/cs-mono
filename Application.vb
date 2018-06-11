@@ -3,6 +3,7 @@ Imports Newtonsoft.Json.Linq
 Imports MathNet.Symbolics
 Imports Expr = MathNet.Symbolics.Expression
 Imports DynamicExpresso
+Imports NDesk.Options
 
 Public Class Application
 	Public Shared Sub Main()

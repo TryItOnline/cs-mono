@@ -18,3 +18,4 @@ The following libraries are available to all 3 languages:
  - FParsecCS
  - System.Runtime.CompilerServices.Unsafe
  - DynamicExpresso.Core
+ - NDesk.Options

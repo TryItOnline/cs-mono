@@ -1,8 +1,10 @@
-﻿open MoreLinq
+﻿open System
+open MoreLinq
 open System.Linq
 open MathNet.Symbolics
 open Newtonsoft.Json.Linq
 open DynamicExpresso
+open NDesk.Options
 
 open Operators
 
@@ -18,5 +20,9 @@ let main argv =
     //DynamicExpresso
     let interpreter = new Interpreter ()
     "2+2" |> interpreter.Eval |> fun x -> x :?> int |> printfn "%d"
+    //NDesk.Options
+    let optionSet = new OptionSet()
+    optionSet.Add<string> ("v", (new Action<string>(fun x -> ()))) |> ignore
+    [|"-v"; "foo"|] |> optionSet.Parse |> printfn "%A"
 
     0
