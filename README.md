@@ -17,3 +17,4 @@ The following libraries are available to all 3 languages:
  - FParsec
  - FParsecCS
  - System.Runtime.CompilerServices.Unsafe
+ - DynamicExpresso.Core

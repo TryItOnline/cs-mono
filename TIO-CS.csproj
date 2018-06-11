@@ -76,6 +76,9 @@
     <Reference Include="Superpower">
       <HintPath>packages\Superpower.2.0.0\lib\net45\Superpower.dll</HintPath>
     </Reference>
+    <Reference Include="DynamicExpresso.Core">
+      <HintPath>packages\DynamicExpresso.Core.2.0.2\lib\net461\DynamicExpresso.Core.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
