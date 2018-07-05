@@ -6,10 +6,8 @@
     <AssemblyName>TIO-CS</AssemblyName>
     <OutputType>Exe</OutputType>
     <AssemblyTitle>TIO-CS</AssemblyTitle>
-    <Company></Company>
+    <Company>TIO</Company>
     <Product>TIO-CS</Product>
-    <Description></Description>
-    <Copyright>Copyright ©  2018</Copyright>
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <FileVersion>1.0.0.0</FileVersion>
