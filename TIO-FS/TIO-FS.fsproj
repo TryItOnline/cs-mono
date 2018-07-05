@@ -72,7 +72,4 @@
   <ItemGroup>
   	<Compile Include="Program.fs" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
 </Project>
