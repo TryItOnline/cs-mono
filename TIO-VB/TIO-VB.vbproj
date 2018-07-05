@@ -3,11 +3,11 @@
     <TargetFramework>net47</TargetFramework>
     <Configurations>Debug;Release</Configurations>
     <RootNamespace>TIO_VB</RootNamespace>
-    <AssemblyName>TIO-VB</AssemblyName>
+    <AssemblyName>TIO</AssemblyName>
     <OutputType>Exe</OutputType>
-    <AssemblyTitle>TIO-VB</AssemblyTitle>
+    <AssemblyTitle>TIO</AssemblyTitle>
     <Company>TIO</Company>
-    <Product>TIO-VB</Product>
+    <Product>TIO</Product>
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <FileVersion>1.0.0.0</FileVersion>
@@ -38,7 +38,7 @@
     <ProjectGuid>{BB400696-7217-40B8-88CD-5F94945CC709}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>TIO_VB</RootNamespace>
-    <AssemblyName>TIO-VB</AssemblyName>
+    <AssemblyName>TIO</AssemblyName>
     <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
