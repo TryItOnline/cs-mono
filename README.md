@@ -19,3 +19,6 @@ The following libraries are available to all 3 languages:
  - System.Runtime.CompilerServices.Unsafe
  - DynamicExpresso.Core
  - NDesk.Options
+ - System.Buffers
+ - System.Numerics.Vectors
+ - System.Memory (System.Span<T>)

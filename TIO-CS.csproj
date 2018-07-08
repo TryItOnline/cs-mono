@@ -67,9 +67,6 @@
     <Reference Include="Superpower">
       <HintPath>packages\Superpower.2.0.0\lib\net45\Superpower.dll</HintPath>
     </Reference>
-    <Reference Include="DynamicExpresso.Core">
-      <HintPath>packages\DynamicExpresso.Core.2.0.2\lib\net461\DynamicExpresso.Core.dll</HintPath>
-    </Reference>
     <Reference Include="NDesk.Options">
       <HintPath>packages\NDesk.Options.0.2.1\lib\NDesk.Options.dll</HintPath>
     </Reference>
@@ -81,6 +78,18 @@
     </Reference>
     <Reference Include="MoreLinq">
       <HintPath>packages\morelinq.3.0.0\lib\net451\MoreLinq.dll</HintPath>
+    </Reference>
+    <Reference Include="DynamicExpresso.Core">
+      <HintPath>packages\DynamicExpresso.Core.2.1.0\lib\net461\DynamicExpresso.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Buffers">
+      <HintPath>packages\System.Buffers.4.4.0\lib\netstandard2.0\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics.Vectors">
+      <HintPath>packages\System.Numerics.Vectors.4.4.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory">
+      <HintPath>packages\System.Memory.4.5.1\lib\netstandard2.0\System.Memory.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

@@ -31,17 +31,11 @@
     <AdditionalParameters></AdditionalParameters>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System" />
+        <Reference Include="System" />
     <Reference Include="mscorlib" />
-    <Reference Include="MoreLinq">
-      <HintPath>packages\morelinq.3.0.0\lib\net451\MoreLinq.dll</HintPath>
-    </Reference>
     <Reference Include="System.Data" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Xml" />
-    <Reference Include="Superpower">
-      <HintPath>packages\Superpower.2.0.0\lib\net45\Superpower.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
     <Reference Include="Newtonsoft.Json">
@@ -51,9 +45,6 @@
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="MathNet.Symbolics">
       <HintPath>packages\MathNet.Symbolics.0.18.1\lib\net40\MathNet.Symbolics.dll</HintPath>
-    </Reference>
-    <Reference Include="FSharp.Core">
-      <HintPath>packages\FSharp.Core.4.5.0\lib\net45\FSharp.Core.dll</HintPath>
     </Reference>
     <Reference Include="FParsec">
       <HintPath>packages\FParsec.1.0.3\lib\net40-client\FParsec.dll</HintPath>
@@ -67,20 +58,38 @@
     <Reference Include="MathNet.Numerics">
       <HintPath>packages\MathNet.Numerics.4.5.1\lib\net461\MathNet.Numerics.dll</HintPath>
     </Reference>
+    <Reference Include="System.ValueTuple">
+      <HintPath>packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="FSharp.Core">
+      <HintPath>packages\FSharp.Core.4.5.0\lib\net45\FSharp.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Superpower">
+      <HintPath>packages\Superpower.2.0.0\lib\net45\Superpower.dll</HintPath>
+    </Reference>
+    <Reference Include="NDesk.Options">
+      <HintPath>packages\NDesk.Options.0.2.1\lib\NDesk.Options.dll</HintPath>
+    </Reference>
     <Reference Include="System.Runtime.CompilerServices.Unsafe">
       <HintPath>packages\System.Runtime.CompilerServices.Unsafe.4.5.1\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
     <Reference Include="System.Threading.Tasks.Extensions">
       <HintPath>packages\System.Threading.Tasks.Extensions.4.5.1\lib\netstandard2.0\System.Threading.Tasks.Extensions.dll</HintPath>
     </Reference>
-    <Reference Include="System.ValueTuple">
-      <HintPath>packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    <Reference Include="MoreLinq">
+      <HintPath>packages\morelinq.3.0.0\lib\net451\MoreLinq.dll</HintPath>
     </Reference>
     <Reference Include="DynamicExpresso.Core">
-      <HintPath>packages\DynamicExpresso.Core.2.0.2\lib\net461\DynamicExpresso.Core.dll</HintPath>
+      <HintPath>packages\DynamicExpresso.Core.2.1.0\lib\net461\DynamicExpresso.Core.dll</HintPath>
     </Reference>
-    <Reference Include="NDesk.Options">
-      <HintPath>packages\NDesk.Options.0.2.1\lib\NDesk.Options.dll</HintPath>
+    <Reference Include="System.Buffers">
+      <HintPath>packages\System.Buffers.4.4.0\lib\netstandard2.0\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics.Vectors">
+      <HintPath>packages\System.Numerics.Vectors.4.4.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory">
+      <HintPath>packages\System.Memory.4.5.1\lib\netstandard2.0\System.Memory.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

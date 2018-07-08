@@ -26,6 +26,8 @@ namespace TIO
 			Console.WriteLine(new OptionSet{
 				{"v", v=>{}}
 			}.Parse(new[] {"-v", "foo"})[0]);
+			//System.Memory
+			Console.WriteLine(new Span<int>(new[]{42})[0]);
 		}
 	}
 }
