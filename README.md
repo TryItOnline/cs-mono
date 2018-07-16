@@ -7,18 +7,19 @@ The following libraries are available to all 3 languages:
 
  - DynamicExpresso.Core
  - FParsec
- - FParsecCS
  - FSharp.Core
- - Mathnet.Numerics
- - Mathnet.Numerics.FSharp
- - Mathnet.Symbolics
- - Microsoft.CSharp
+ - MathNet.Numerics
+ - MathNet.Numerics.FSharp
+ - MathNet.Symbolics
  - morelinq
  - NDesk.Options
  - Newtonsoft.Json
  - Superpower
  - System.Buffers
+ - System.Dynamic.Runtime
  - System.Memory
  - System.Numerics.Vectors
+ - System.ObjectModel
  - System.Runtime.CompilerServices.Unsafe
+ - System.Threading.Tasks.Extensions
  - System.ValueTuple
