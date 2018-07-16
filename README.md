@@ -5,20 +5,20 @@ They enable users to much more easily use the libraries available on TIO.
 
 The following libraries are available to all 3 languages:
 
- - morelinq
- - System.ValueTuple
- - Superpower
- - Microsoft.CSharp
- - Newtonsoft.Json
- - Mathnet.Symbolics
- - Mathnet.Numerics
- - Mathnet.Numerics.FSharp
- - FSharp.Core
+ - DynamicExpresso.Core
  - FParsec
  - FParsecCS
- - System.Runtime.CompilerServices.Unsafe
- - DynamicExpresso.Core
+ - FSharp.Core
+ - Mathnet.Numerics
+ - Mathnet.Numerics.FSharp
+ - Mathnet.Symbolics
+ - Microsoft.CSharp
+ - morelinq
  - NDesk.Options
+ - Newtonsoft.Json
+ - Superpower
  - System.Buffers
+ - System.Memory
  - System.Numerics.Vectors
- - System.Memory (System.Span<T>)
+ - System.Runtime.CompilerServices.Unsafe
+ - System.ValueTuple
