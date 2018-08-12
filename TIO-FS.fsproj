@@ -51,12 +51,6 @@
     <Reference Include="MathNet.Symbolics">
       <HintPath>packages\MathNet.Symbolics.0.18.1\lib\net40\MathNet.Symbolics.dll</HintPath>
     </Reference>
-    <Reference Include="FParsec">
-      <HintPath>packages\FParsec.1.0.3\lib\net40-client\FParsec.dll</HintPath>
-    </Reference>
-    <Reference Include="FParsecCS">
-      <HintPath>packages\FParsec.1.0.3\lib\net40-client\FParsecCS.dll</HintPath>
-    </Reference>
     <Reference Include="MathNet.Numerics.FSharp">
       <HintPath>packages\MathNet.Numerics.FSharp.4.5.1\lib\net45\MathNet.Numerics.FSharp.dll</HintPath>
     </Reference>
@@ -65,9 +59,6 @@
     </Reference>
     <Reference Include="System.ValueTuple">
       <HintPath>packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
-    </Reference>
-    <Reference Include="Superpower">
-      <HintPath>packages\Superpower.2.0.0\lib\net45\Superpower.dll</HintPath>
     </Reference>
     <Reference Include="NDesk.Options">
       <HintPath>packages\NDesk.Options.0.2.1\lib\NDesk.Options.dll</HintPath>
@@ -95,6 +86,15 @@
     </Reference>
     <Reference Include="FSharp.Core">
       <HintPath>packages\FSharp.Core.4.5.2\lib\net45\FSharp.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Superpower">
+      <HintPath>packages\Superpower.2.0.1-dev-00120\lib\net45\Superpower.dll</HintPath>
+    </Reference>
+    <Reference Include="FParsec">
+      <HintPath>packages\FParsec.1.0.4-RC3\lib\net40-client\FParsec.dll</HintPath>
+    </Reference>
+    <Reference Include="FParsecCS">
+      <HintPath>packages\FParsec.1.0.4-RC3\lib\net40-client\FParsecCS.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
