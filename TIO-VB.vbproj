@@ -91,6 +91,12 @@
     <Reference Include="FParsecCS">
       <HintPath>packages\FParsec.1.0.4-RC3\lib\net40-client\FParsecCS.dll</HintPath>
     </Reference>
+    <Reference Include="System.Globalization.Extensions">
+      <HintPath>packages\System.Globalization.Extensions.4.3.0\lib\net46\System.Globalization.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization.Calendars">
+      <HintPath>packages\System.Globalization.Calendars.4.3.0\lib\net46\System.Globalization.Calendars.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Application.vb" />

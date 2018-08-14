@@ -17,6 +17,8 @@ The following libraries are available to all 3 languages:
  - Superpower
  - System.Buffers
  - System.Dynamic.Runtime
+ - System.Globalization.Calendars
+ - System.Globalization.Extensions
  - System.Memory
  - System.Numerics.Vectors
  - System.ObjectModel
