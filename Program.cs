@@ -6,6 +6,7 @@ using MathNet.Symbolics;
 using Expr = MathNet.Symbolics.Expression;
 using DynamicExpresso;
 using NDesk.Options;
+using System.Collections.Immutable;
 
 namespace TIO
 {
@@ -28,6 +29,8 @@ namespace TIO
 			}.Parse(new[] {"-v", "foo"})[0]);
 			//System.Memory
 			Console.WriteLine(new Span<int>(new[]{42})[0]);
+			//System.Collections.Immutable
+			Console.WriteLine(new[]{12}.ToImmutableArray()[0]);
 		}
 	}
 }

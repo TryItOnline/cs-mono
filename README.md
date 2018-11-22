@@ -16,6 +16,7 @@ The following libraries are available to all 3 languages:
  - Newtonsoft.Json
  - Superpower
  - System.Buffers
+ - System.Collections.Immutable
  - System.Dynamic.Runtime
  - System.Globalization.Calendars
  - System.Globalization.Extensions
