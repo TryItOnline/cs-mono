@@ -1,6 +1,6 @@
 # C#, F#, and VB.NET Mono project files for TIO
 
-The compiler and runtime used by the languages *C# (Visual C# Compiler)*, *C# (Mono C# Compiler)*, *F# (Mono)*, *Visual Basic .NET (Mono)*, and *Visual Basic .NET (VBC)* on TIO are based on [Mono](https://www.mono-project.com/). The Visual C# Compiler is the Roslyn compiler `csc` and the Mono C# Compiler is the older `mcs`, and the Mono VB.NET compiler is the older `vbnc` compiler (`vbc` is the newer Roslyn compiler).
+The compiler and runtime used by the languages *C# (Visual C# Compiler)*, *C# (Mono C# Compiler)*, *F# (Mono)*, *Visual Basic .NET (Mono)*, and *Visual Basic .NET (VBC)* on TIO come from [Mono](https://www.mono-project.com/). The Visual C# Compiler is the Roslyn compiler `csc` and the Mono C# Compiler is the older `mcs`, and the Mono VB.NET compiler is the older `vbnc` compiler (`vbc` is the newer Roslyn compiler).
 
 All of these languages are built using the `msbuild` tool, the *Compiler flags* field specifies options passed to msbuild rather than the individual compilers. Certain msbuild options may cause problems with *Visual Basic .NET (Mono)*, which uses slightly different flags from the vbc compiler msbuild is intended to work with.
 
