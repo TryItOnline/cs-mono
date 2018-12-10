@@ -51,7 +51,7 @@
     <Reference Include="System.Numerics" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="MathNet.Symbolics">
-      <HintPath>packages\MathNet.Symbolics.0.20.0\lib\net40\MathNet.Symbolics.dll</HintPath>
+      <HintPath>packages\MathNet.Symbolics.0.20.0\lib\net461\MathNet.Symbolics.dll</HintPath>
     </Reference>
     <Reference Include="MathNet.Numerics.FSharp">
       <HintPath>packages\MathNet.Numerics.FSharp.4.7.0\lib\net45\MathNet.Numerics.FSharp.dll</HintPath>
