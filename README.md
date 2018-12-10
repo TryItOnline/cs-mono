@@ -1,9 +1,13 @@
-# MSBuild project files for TIO
+# C#, F#, and VB.NET Mono project files for TIO
 
-This repository contains a set of project files and configuration files that are used by C#, F#, and Visual Basic.NET.
-They enable users to much more easily use the libraries available on TIO.
+The compiler and runtime used by the languages *C# (Visual C# Compiler)*, *C# (Mono C# Compiler)*, *F# (Mono)*, *Visual Basic .NET (Mono)*, and *Visual Basic .NET (VBC)* on TIO come from [Mono](https://www.mono-project.com/). The Visual C# Compiler is the Roslyn compiler `csc` and the Mono C# Compiler is the older `mcs`, and the Mono VB.NET compiler is the older `vbnc` compiler (`vbc` is the newer Roslyn compiler).
 
-The following libraries are available to all 3 languages:
+All of these languages are built using the `msbuild` tool, the *Compiler flags* field specifies options passed to msbuild rather than the individual compilers. Certain msbuild options may cause problems with *Visual Basic .NET (Mono)*, which uses slightly different flags from the vbc compiler msbuild is intended to work with.
+
+Each languages uses a similar `.csproj`/`.fsproj`/`.vbproj` file. 
+These project files mostly resemble the defaults created by MonoDevelop, however C# is set to use the latest language version rather than the latest *major* version, F# has tail-call optimization enabled by default, VB.NET has certain imports enabled by default to match what Visual Studio 2017 uses, and all languages have unsafe code enabled.
+
+Additionally, the following libraries from [Nuget](https://www.nuget.org/) are available to all 3 languages:
 
  - DynamicExpresso.Core
  - FParsec
@@ -26,3 +30,5 @@ The following libraries are available to all 3 languages:
  - System.Runtime.CompilerServices.Unsafe
  - System.Threading.Tasks.Extensions
  - System.ValueTuple
+
+All libraries should be up-to-date to the most recent stable or preview build. If this is not the case, it is a bug and you should report it by pinging @Pavel in [talk.tryitonline.net](https://chat.stackexchange.com/rooms/44255/talk-tryitonline-net) or opening an issue on this repository.
