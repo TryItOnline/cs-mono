@@ -37,19 +37,19 @@
   <PropertyGroup Condition="'$(VisualStudioVersion)' == '10.0' OR '$(VisualStudioVersion)' == '11.0'">
     <FSharpTargetsPath>$(MSBuildExtensionsPath32)\..\Microsoft SDKs\F#\3.0\Framework\v4.0\Microsoft.FSharp.Targets</FSharpTargetsPath>
   </PropertyGroup>
-<ItemGroup>
-    <Reference Include="System" />
-    <Reference Include="mscorlib" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="System.Xml" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Core" />
+  <ItemGroup>
+    <Reference Include="System"/>
+    <Reference Include="mscorlib"/>
+    <Reference Include="System.Data"/>
+    <Reference Include="System.Data.DataSetExtensions"/>
+    <Reference Include="System.Xml"/>
+    <Reference Include="Microsoft.CSharp"/>
+    <Reference Include="System.Core"/>
     <Reference Include="Newtonsoft.Json">
       <HintPath>packages\Newtonsoft.Json.12.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="System.Numerics" />
-    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Numerics"/>
+    <Reference Include="System.Runtime.Serialization"/>
     <Reference Include="MathNet.Symbolics">
       <HintPath>packages\MathNet.Symbolics.0.20.0\lib\net461\MathNet.Symbolics.dll</HintPath>
     </Reference>
@@ -93,10 +93,10 @@
       <HintPath>packages\Superpower.2.2.0\lib\net45\Superpower.dll</HintPath>
     </Reference>
     <Reference Include="FParsec">
-      <HintPath>packages\FParsec.1.0.4-RC3\lib\net40-client\FParsec.dll</HintPath>
+      <HintPath>packages\FParsec.1.0.4-rc3\lib\net40-client\FParsec.dll</HintPath>
     </Reference>
     <Reference Include="FParsecCS">
-      <HintPath>packages\FParsec.1.0.4-RC3\lib\net40-client\FParsecCS.dll</HintPath>
+      <HintPath>packages\FParsec.1.0.4-rc3\lib\net40-client\FParsecCS.dll</HintPath>
     </Reference>
     <Reference Include="System.Globalization.Extensions">
       <HintPath>packages\System.Globalization.Extensions.4.3.0\lib\net46\System.Globalization.Extensions.dll</HintPath>
@@ -109,9 +109,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Properties\AssemblyInfo.fs" />
-    <Compile Include="Program.fs" />
-    <None Include="packages.config" />
+    <Compile Include="Properties\AssemblyInfo.fs"/>
+    <Compile Include="Program.fs"/>
+    <None Include="packages.config"/>
   </ItemGroup>
-  <Import Project="$(FSharpTargetsPath)" />
+  <Import Project="$(FSharpTargetsPath)"/>
 </Project>

@@ -1,0 +1,56 @@
+#!/usr/bin/perl
+use strict;
+use warnings;
+use 5.028;
+
+use XML::Twig;
+use LWP::Simple qw(get);
+use JSON;
+
+my $twig = XML::Twig->new(pretty_print => 'indented');
+$twig->parsefile('./packages.config');
+
+my %outdated;
+
+for my $package ($twig->root->children) {
+    my %attrs = $package->{att}->%*;
+    my ($id, $version) = @attrs{qw(id version)};
+
+    my $nuget_url = "https://api.nuget.org/v3-flatcontainer/$id/index.json";
+    my $json = get $nuget_url;
+    die "Failed to contact the nuget API!" unless $json;
+    my $latest = ${decode_json($json)->{versions}}[-1];
+
+    next if $latest eq $version;
+    $package->{att}->{version} = $latest;
+    $outdated{$id} = $latest;
+    say "Upgrading $id from $version to $latest";
+}
+
+$twig->print_to_file("./packages.config");  
+
+
+for my $proj (glob 'TIO-*.*proj') {
+    $twig->parsefile($proj);
+    for my $ItemGroup ($twig->root->children('ItemGroup')) {
+        for my $Reference ($ItemGroup->children('Reference')) {
+            my $HintPath = $Reference->first_child('HintPath');
+            next unless defined($HintPath);
+            my $path = "";
+            open my $pathfh, '>', \$path;
+            $HintPath->first_child->print($pathfh);
+            $path =~ m/^packages\\([^\\]+)/;
+            my $idver = $1;
+            
+            my ($id, $ver) = $idver =~ m/(\D+)\.(\d.*)/;
+            next unless exists $outdated{$id};
+
+            $ver = $outdated{$id};
+            $idver = "$id.$ver";
+            $path =~ s/^.*?\\\K[^\\]+/$idver/;
+            $HintPath->set_inner_xml($path);
+        }
+    }
+
+    $twig->print_to_file($proj);
+}
