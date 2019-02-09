@@ -6,6 +6,7 @@ use 5.028;
 use XML::Twig;
 use LWP::Simple qw(get);
 use JSON;
+use Data::Dump qw(pp);
 
 chdir __FILE__ =~ s <[^/]+$> <>r;
 
@@ -19,7 +20,12 @@ for my $package ($twig->root->children) {
     my ($id, $version) = @attrs{qw(id version)};
 
     my $nuget_url = "https://api.nuget.org/v3-flatcontainer/$id/index.json";
+
+    say STDERR "id: $id";
+    say STDERR "nuget url: $nuget_url";
+
     my $json = get $nuget_url;
+    say STDERR "return json: " . pp $json;
     die "Failed to contact the nuget API!" unless $json;
     my @versions = decode_json($json)->{versions}->@*;
     @versions = grep {!m/[a-zA-Z]/} @versions;
