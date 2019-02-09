@@ -64,3 +64,5 @@ for my $proj (glob 'TIO-*.*proj') {
 
     $twig->print_to_file($proj);
 }
+
+say "Finished upgrading " . scalar(keys %outdated) . " package(s).";
