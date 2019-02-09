@@ -4,7 +4,7 @@ use warnings;
 use 5.028;
 
 use XML::Twig;
-use LWP::Simple qw(get);
+use HTTP::Tiny;
 use JSON;
 use Data::Dump qw(pp);
 
@@ -12,6 +12,8 @@ chdir __FILE__ =~ s <[^/]+$> <>r;
 
 my $twig = XML::Twig->new(pretty_print => 'indented');
 $twig->parsefile('./packages.config');
+
+my $http = HTTP::Tiny->new();
 
 my %outdated;
 
@@ -21,12 +23,10 @@ for my $package ($twig->root->children) {
 
     my $nuget_url = "https://api.nuget.org/v3-flatcontainer/$id/index.json";
 
-    say STDERR "id: $id";
-    say STDERR "nuget url: $nuget_url";
+    my $response = $http->get($nuget_url);
+    die "Failed to contact the nuget API!" unless $response->{success};
+    my $json = $response->{content};
 
-    my $json = get $nuget_url;
-    say STDERR "return json: " . pp $json;
-    die "Failed to contact the nuget API!" unless $json;
     my @versions = decode_json($json)->{versions}->@*;
     @versions = grep {!m/[a-zA-Z]/} @versions;
     my $latest = $versions[-1];
