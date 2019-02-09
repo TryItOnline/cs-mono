@@ -7,6 +7,8 @@ use XML::Twig;
 use LWP::Simple qw(get);
 use JSON;
 
+chdir __FILE__ =~ s <[^/]+$> <>r;
+
 my $twig = XML::Twig->new(pretty_print => 'indented');
 $twig->parsefile('./packages.config');
 
