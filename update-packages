@@ -19,7 +19,9 @@ for my $package ($twig->root->children) {
     my $nuget_url = "https://api.nuget.org/v3-flatcontainer/$id/index.json";
     my $json = get $nuget_url;
     die "Failed to contact the nuget API!" unless $json;
-    my $latest = ${decode_json($json)->{versions}}[-1];
+    my @versions = decode_json($json)->{versions}->@*;
+    @versions = grep {!m/[a-zA-Z]/} @versions;
+    my $latest = $versions[-1];
 
     next if $latest eq $version;
     $package->{att}->{version} = $latest;

@@ -31,4 +31,4 @@ Additionally, the following libraries from [Nuget](https://www.nuget.org/) are a
  - System.Threading.Tasks.Extensions
  - System.ValueTuple
 
-All libraries should be up-to-date to the most recent stable or preview build. If this is not the case, it is a bug and you should report it by pinging @Pavel in [talk.tryitonline.net](https://chat.stackexchange.com/rooms/44255/talk-tryitonline-net) or opening an issue on this repository.
+All libraries should be up-to-date to the most recent stable build.
