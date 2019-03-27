@@ -6,9 +6,9 @@ use 5.028;
 use XML::Twig;
 use HTTP::Tiny;
 use JSON;
-use Data::Dump qw(pp);
+use Dir::Self;
 
-chdir __FILE__ =~ s <[^/]+$> <>r;
+chdir __DIR__;
 
 my $twig = XML::Twig->new(pretty_print => 'indented');
 $twig->parsefile('./packages.config');
@@ -28,7 +28,7 @@ for my $package ($twig->root->children) {
     my $json = $response->{content};
 
     my @versions = decode_json($json)->{versions}->@*;
-    @versions = grep {!m/[a-zA-Z]/} @versions;
+    @versions = grep {!m/[a-zA-Z]/} @versions; # Only prerelease versions contain letters
     my $latest = $versions[-1];
 
     next if $latest eq $version;
@@ -65,4 +65,4 @@ for my $proj (glob 'TIO-*.*proj') {
     $twig->print_to_file($proj);
 }
 
-say "Finished upgrading " . scalar(keys %outdated) . " package(s).";
+say "Finished upgrading " . scalar(%outdated) . " package(s).";

@@ -9,6 +9,7 @@ These project files mostly resemble the defaults created by MonoDevelop, however
 
 Additionally, the following libraries from [Nuget](https://www.nuget.org/) are available to all 3 languages:
 
+ - CsvHelper
  - DynamicExpresso.Core
  - FParsec
  - FSharp.Core

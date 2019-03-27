@@ -102,8 +102,8 @@
     <Reference Include="System.Collections.Immutable">
       <HintPath>packages\System.Collections.Immutable.1.5.0\lib\netstandard2.0\System.Collections.Immutable.dll</HintPath>
     </Reference>
-    <Reference Include="Sdcb.System.Range">
-      <HintPath>packages\Sdcb.System.Range.1.0.3\lib\netstandard2.0\Sdcb.System.Range.dll</HintPath>
+    <Reference Include="CsvHelper">
+      <HintPath>packages\CsvHelper.12.1.2\lib\netstandard2.0\CsvHelper.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
