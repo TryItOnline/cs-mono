@@ -19,6 +19,12 @@ Additionally, the following libraries from [Nuget](https://www.nuget.org/) are a
  - morelinq
  - NDesk.Options
  - Newtonsoft.Json
+ - Nito.AsyncEx.Context
+ - Nito.AsyncEx.Coordination
+ - Nito.AsyncEx.Interop.WaitHandles
+ - Nito.AsyncEx.Oop
+ - Nito.AsyncEx.Tasks
+ - Nito.Cancellation
  - Superpower
  - System.Buffers
  - System.Collections.Immutable
