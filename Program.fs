@@ -5,6 +5,7 @@ open MathNet.Symbolics
 open Newtonsoft.Json.Linq
 open DynamicExpresso
 open NDesk.Options
+open Microsoft.Z3
 
 open Operators
 
@@ -24,5 +25,6 @@ let main argv =
         let optionSet = new OptionSet()
         optionSet.Add<string> ("v", (new Action<string>(fun x -> ()))) |> ignore
         [|"-v"; "foo"|] |> optionSet.Parse |> printfn "%A"
-
+        //Microsoft.Z3
+        Microsoft.Z3.Version.ToString() |> printfn "Z3: %A"
         0

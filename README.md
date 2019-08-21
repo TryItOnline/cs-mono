@@ -16,6 +16,7 @@ Additionally, the following libraries from [Nuget](https://www.nuget.org/) are a
  - MathNet.Numerics
  - MathNet.Numerics.FSharp
  - MathNet.Symbolics
+ - Microsoft.Z3
  - morelinq
  - NDesk.Options
  - Newtonsoft.Json

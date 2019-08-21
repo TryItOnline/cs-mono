@@ -24,7 +24,7 @@ for my $package ($twig->root->children) {
     my $nuget_url = "https://api.nuget.org/v3-flatcontainer/$id/index.json";
 
     my $response = $http->get($nuget_url);
-    die "Failed to contact the nuget API!" unless $response->{success};
+    die "Failed to contact the nuget API for package $id" unless $response->{success};
     my $json = $response->{content};
 
     my @versions = decode_json($json)->{versions}->@*;
@@ -50,9 +50,8 @@ for my $proj (glob 'TIO-*.*proj') {
             open my $pathfh, '>', \$path;
             $HintPath->first_child->print($pathfh);
             $path =~ m/^packages\\([^\\]+)/;
-            my $idver = $1;
-            
-            my ($id, $ver) = $idver =~ m/(\D+)\.(\d.*)/;
+            my $idver = $1;           
+            my ($id, $ver) = $idver =~ m/(.+?)\.(\d.*)/;
             next unless exists $outdated{$id};
 
             $ver = $outdated{$id};

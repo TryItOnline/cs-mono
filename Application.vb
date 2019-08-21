@@ -1,4 +1,5 @@
-﻿Imports MoreLinq
+﻿Imports Microsoft.Z3
+Imports MoreLinq
 Imports Newtonsoft.Json.Linq
 Imports MathNet.Symbolics
 Imports Expr = MathNet.Symbolics.Expression
@@ -16,5 +17,7 @@ Public Class Application
 		Console.WriteLine(Infix.Format(x+x))
 		'DynamicExpresso
 		Console.WriteLine(New Interpreter().Eval("2+2"))
+		'Microsoft.Z3
+		Console.WriteLine("Z3: " + Microsoft.Z3.Version.ToString())
 	End Sub
 End Class

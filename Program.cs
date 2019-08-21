@@ -7,6 +7,7 @@ using Expr = MathNet.Symbolics.Expression;
 using DynamicExpresso;
 using NDesk.Options;
 using System.Collections.Immutable;
+using Microsoft.Z3;
 
 namespace TIO
 {
@@ -31,6 +32,12 @@ namespace TIO
 			Console.WriteLine(new Span<int>(new[]{42})[0]);
 			//System.Collections.Immutable
 			Console.WriteLine(new[]{12}.ToImmutableArray()[0]);
+			//Microsoft.Z3
+			try {
+				Console.WriteLine($"Z3: {Microsoft.Z3.Version.ToString()}");
+			} catch(DllNotFoundException) {
+				Console.WriteLine($"Warning, native Z3 library not detected");
+			}
 		}
 	}
 }
