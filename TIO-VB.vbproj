@@ -32,7 +32,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System"/>
-    <Reference Include="mscorlib"/>
+    <Reference Include="mscorlib">
+      <HintPath>/usr/lib/mono/4.5/mscorlib.dll</HintPath>
+    </Reference>
     <Reference Include="System.Data"/>
     <Reference Include="System.Data.DataSetExtensions"/>
     <Reference Include="System.Xml"/>
